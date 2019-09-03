@@ -1,7 +1,7 @@
 # udemy-angular-course
 Learning Angular
 
-#Author
+# Author
 Bruno Vedoveto Leandro
 
 Udemy link:
