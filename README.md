@@ -5,4 +5,4 @@ Learning Angular
 Bruno Vedoveto Leandro
 
 Udemy link:
-* https://github.com/bleandro/udemy-angular-course
+> https://github.com/bleandro/udemy-angular-course
