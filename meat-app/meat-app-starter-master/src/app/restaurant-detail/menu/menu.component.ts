@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
     this.menu = this.restaurantService.getMenuItemInfoByRestaurantId(id)
   }
 
-  addMenuItem(item: MenuItem) {
+  public addMenuItem(item: MenuItem) {
     console.log(item)
   }
 
