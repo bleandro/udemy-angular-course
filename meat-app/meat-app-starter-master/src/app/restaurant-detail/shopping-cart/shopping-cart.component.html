@@ -19,6 +19,12 @@
 
             <td class="text-right">{{item.getTotalValue() | currency: 'BRL': true}}</td>
           </tr>
+
+          <tr>
+            <th>Total:</th>
+
+            <td class="text-right">{{getTotalValue() | currency: 'BRL': true}}</td>
+          </tr>
         </tbody>
       </table>
     </div>
