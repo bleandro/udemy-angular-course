@@ -20,7 +20,10 @@ export class ShoppingCartService {
     }
 
     public removeItem(item: CartItem): void {
-        this.cartItems.splice(this.cartItems.indexOf(item), 1)
+        if (item.quantity > 1)
+            item.quantity = item.quantity - 1
+        else
+            this.cartItems.splice(this.cartItems.indexOf(item), 1)
     }
 
     public getTotalValue(): number {

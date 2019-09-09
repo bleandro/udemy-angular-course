@@ -19,7 +19,10 @@
 
             <td class="text-right">{{item.getTotalValue() | currency: 'BRL': true}}</td>
             <td class="text-right">
-              <a (click)="removeItem(item)" class="btn btn-sm danger"><i class="fa fa-remove"></i></a>
+              <a (click)="addItem(item.menuItem)" class="btn btn-sm danger"><i class="fa fa-plus"></i></a>
+            </td>
+            <td class="text-right">
+              <a (click)="removeItem(item)" class="btn btn-sm danger"><i class="fa fa-minus"></i></a>
             </td>
           </tr>
 
