@@ -2,7 +2,7 @@ import { CartItem } from "./cart-item.model";
 import { MenuItem } from "../menu-item/menuitem.model";
 
 export class ShoppingCartService {
-    constructor() {}
+    constructor() { }
 
     cartItems: CartItem[] = []
 
@@ -25,6 +25,6 @@ export class ShoppingCartService {
 
     public getTotalValue(): number {
         return this.cartItems.map(x => x.getTotalValue())
-                             .reduce((num1, num2) => num1 + num2, 0)
+            .reduce((num1, num2) => num1 + num2, 0)
     }
 }
