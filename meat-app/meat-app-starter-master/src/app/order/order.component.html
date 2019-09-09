@@ -21,13 +21,13 @@
           <p class="lead">Endereço de Entrega:</p>
         </div>
         <div class="col-sm-6 col-xs-12">
-          <mt-input-container label="Endereço" errorMessage="Campo obrigatório">
+          <mt-input-container label="Endereço" errorMessage="Valor inválido">
             <input type="text" class="form-control" name="address" required autocomplete="off" minlength="5" ngModel placeholder="Endereço">
           </mt-input-container>
         </div>
         <div class="col-sm-2 col-xs-6">
-          <mt-input-container label="Número" errorMessage="Campo obrigatório">
-            <input type="text" class="form-control" name="number" required autocomplete="off" #iptNumber="ngModel" ngModel placeholder="Número">
+          <mt-input-container label="Número" errorMessage="Valor inválido">
+            <input type="text" class="form-control" name="number" pattern="^[0-9]*$" required autocomplete="off" #iptNumber="ngModel" ngModel placeholder="Número">
           </mt-input-container>
         </div>
         <div class="col-sm-4 col-xs-6">
