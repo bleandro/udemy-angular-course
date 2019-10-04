@@ -27,7 +27,7 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   public removeItem(item: CartItem): void {
-    this.shoppingCartService.removeItem(item)
+    this.shoppingCartService.decreaseQty(item)
   }
 
   public getTotalValue(): number {
