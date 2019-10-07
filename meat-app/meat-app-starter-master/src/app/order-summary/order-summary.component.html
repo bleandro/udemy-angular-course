@@ -7,7 +7,11 @@
     <p>Seu pedido foi recebido pelo restaurante. Prepare a mesa que a comida está chegando!</p>
     <p><b>Avalie</b> sua experiência:</p>
     <p>
-      <mt-rating></mt-rating>
+      <mt-rating (onRate)="rated = true"></mt-rating>
+    </p>
+
+    <p *ngIf="rated">
+      Obrigado por sua avaliação!
     </p>
   </div>
 
